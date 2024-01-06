@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UsersManagement.Application.Features.Users.Commands
 {
-    public class CreateUserCommand : IRequest<CreateUserDto>
+    public class CreateUserCommand : IRequest<string>
     {
         public CreateUserCommand(string firstName, string lastName, string email, string password)
         {

@@ -9,8 +9,9 @@ namespace UsersManagement.Domain.Entities
     public class Account
     {
         public int Id { get; set; }
-        public int AccountNumber { get; set; } 
+        public string AccountNumber { get; set; } 
         public int UserId { get; set; }
+        public int sum {  get; set; }
         public virtual User User { get; set; }
     }
 }
