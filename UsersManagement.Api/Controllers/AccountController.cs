@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UsersManagement.Application.Features.Accounts.Commands.Deposit;
 using UsersManagement.Application.Features.Accounts.Commands.NewFolder;
@@ -11,6 +12,7 @@ namespace UsersManagement.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AccountController : ControllerBase
     {
         private readonly IMediator _mediator;
